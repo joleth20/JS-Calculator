@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+  <main>         
+      <div class="calculator-container">
+        <div class="output">
+          <input id="display" readonly>
+        </div>
+        <div class="buttons">
+        <button onclick="clearDisplay()" class="cancel">C</button>
+        <button onclick="joleth('/')" class="divide">/</button>
+        <button onclick="joleth('*')" class="multiply">*</button>
+        <button onclick="joleth('7')" class="seven">7</button>
+        <button onclick="joleth('8')" class="eight">8</button>
+        <button onclick="joleth('9')" class="nine">9</button>
+        <button onclick="joleth('-')" class="minus">-</button>
+        <button onclick="joleth('4')"  class="four">4</button>
+        <button onclick="joleth('5')" class="five">5</button>
+        <button onclick="joleth('6')" class="six">6</button>
+         <button onclick="joleth('+')" class="plus">+</button>
+         <button onclick="joleth('1')" class="one">1</button>
+         <button onclick="joleth('2')" class="two">2</button>
+         <button onclick="joleth('3')" class="three">3</button>
+         <button onclick="joleth('0')" class="zero">0</button>
+         <button onclick="joleth('00')" class="zero-zero">00</button>
+         <button onclick="joleth('.')" class="dot">.</button>
+         <button onclick="calCulate()" class="equal">=</button>
+        </div>
+      </div>
+  </main>
+
+  <script src="./calculator.js"></script>
+</body>
+</html>

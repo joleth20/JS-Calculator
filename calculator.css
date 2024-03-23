@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-background:#242222;
+    --cancel:#c20808;
+    --equal: #0e63e3;
+    --output:#b0baa9;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--primary-background);
+    /* Layout */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+main .calculator-container{
+    height: 450px;
+    width: 350px;
+    background-color: var(--primary-background);
+    box-shadow: 0px 0px 10px 2px;
+    border-radius: 10px;
+    padding: 25px 25px;
+    /* layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+main .calculator-container .output{
+    height: 90px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+main .calculator-container .output input{
+    height: 100%;
+    width: 100%;
+    background-color: var(--output);
+    border-radius: 10px;
+    padding: 25px 30px;
+    font-size: 20px;
+    outline: none;
+}
+
+main .calculator-container .buttons{
+
+    /* layout */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "cancel cancel divide multiply"
+    " seven eight nine minus "
+    "four five six plus"
+    "one two three plus"
+    "zero zero-zero dot equal"
+    ;
+}
+
+main .calculator-container .buttons >button{
+    height: 45px;
+    border-radius: 15px;
+    background-color: var(--primary-background);
+    color: var(--output);
+}
+
+main .calculator-container .buttons .cancel{
+    grid-area: cancel;
+    background-color: var(--cancel);
+}
+
+main .calculator-container .buttons .divide{
+    grid-area: divide;
+}
+
+main .calculator-container .buttons .multiply{
+    grid-area: multiply;
+}
+
+main .calculator-container .buttons .seven{
+    grid-area: seven;
+}
+
+main .calculator-container .buttons .eight{
+    grid-area: eight;
+}
+
+main .calculator-container .buttons .nine{
+    grid-area: nine;
+}
+
+main .calculator-container .buttons .plus{
+    grid-area: plus;
+    height: 100%;
+}
+
+main .calculator-container .buttons .four{
+    grid-area: four;
+}
+
+main .calculator-container .buttons .five{
+    grid-area: five;
+}
+
+main .calculator-container .buttons .six{
+    grid-area: six;
+}
+
+main .calculator-container .buttons .one{
+    grid-area: one;
+}
+
+main .calculator-container .buttons .two{
+    grid-area: two;
+}
+main .calculator-container .buttons .three{
+    grid-area: three;
+}
+
+main .calculator-container .buttons .plus{
+    grid-area: plus;
+
+}
+
+main .calculator-container .buttons .zero{
+    grid-area: zero;
+}
+
+main .calculator-container .buttons .zero-zero{
+    grid-area: zero-zero;
+}
+
+main .calculator-container .buttons .dot{
+    grid-area: dot;
+}
+
+main .calculator-container .buttons .equal{
+    grid-area: equal;
+    background-color: var(--equal);
+}
