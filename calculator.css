@@ -21,8 +21,6 @@ main{
     justify-content: center;
 }
 
-
-
 main .calculator-container{
     height: 450px;
     width: 350px;
@@ -53,7 +51,6 @@ main .calculator-container .output input{
 }
 
 main .calculator-container .buttons{
-
     /* layout */
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;

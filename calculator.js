@@ -1,20 +1,20 @@
+const display = document.querySelector('#display')
 
-   const display = document.querySelector('#display');
-   console.log(display); // Check if display element is selected
- 
-   function joleth(input){ 
-     display.value += input;
+// Display
+const joleth = (input) => {
+    display.value += input
+}
+
+// Calculate
+const calCulate = () => {
+   try{
+    display.value = eval(display.value)
+   }catch(error){
+    display.value = "Error Calculation"
    }
- 
-   function calCulate(){
-     try {
-       display.value = eval(display.value);
-     } catch (error) {
-       display.value = "Error in calculation";
-     }
-   }
- 
-   function clearDisplay(){
-     display.value = '';
-   }
- 
+}
+
+// ClearDisplay
+const clearDisplay = () => {
+  display.value = "";
+}
